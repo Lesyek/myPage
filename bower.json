@@ -1,0 +1,21 @@
+{
+  "name": "LesyekPage",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Lesyek/myPage",
+  "authors": [
+    "Lesyek <leszek.pawlak@o2.pl>"
+  ],
+  "description": "My landing page",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bourbon": "~4.2.5",
+    "neat": "~1.7.2"
+  }
+}
