@@ -1,6 +1,5 @@
 // global
 body {
-    @include background(rgba(green, .2));
     p {
         @include padding(20px 0);
         letter-spacing: 1px;
