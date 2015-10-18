@@ -17,4 +17,8 @@
     setTimeout(function() {
         document.getElementById('k').classList.add('triangled');
     }, 5000);
+    setTimeout(function() {
+        document.getElementById('header').classList.add('end');
+    }, 7100);
 })();
+

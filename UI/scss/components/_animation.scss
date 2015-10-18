@@ -3,7 +3,7 @@
     top: 20%;
     left: 50%;
     margin-left: -200px;
-    a {
+    span {
         width: 0;
         height: 0;
         border-style: solid;
@@ -20,7 +20,7 @@
     }
     #l {
         border-width: 0 30px 50px 30px;
-        border-color: transparent transparent rgba(#007bff,1) rgba(#007bff,0);
+        border-color: transparent transparent rgba($animation-border-color,1) rgba($animation-border-color,0);
         margin: 50px 20px 50px 50px;
         @include transition(all 500ms ease-in-out 1.2s, margin 400ms ease-in-out, border-width 400ms ease-in-out .5s, border-color 400ms ease-in-out 1s);
         &.triangle-action {
@@ -30,13 +30,13 @@
             border-width: 0 0 50px 15px;
             margin-top: 40px;
             margin-right: 40px;
-            border-color: transparent transparent rgba(#007bff,0) rgba(#007bff,1);
+            border-color: transparent transparent rgba($animation-border-color,0) rgba($animation-border-color,1);
             @include transform(rotate(-100deg));
             &:before {
                 top: -24px;
                 left: 11px;
                 border-width: 0 8px 70px 8px;
-                border-color: transparent transparent #007bff transparent;
+                border-color: transparent transparent $animation-border-color transparent;
                 @include transition(all 400ms ease-in-out 300ms);
                 @include transform(rotate(120deg));
             }
@@ -45,14 +45,14 @@
     #e {
         border-width: 0 20px 30px 20px;
         margin-top: 28px;
-        border-color: transparent transparent rgba(#007bff,1) transparent;
+        border-color: transparent transparent rgba($animation-border-color,1) transparent;
         @include transform(rotate(-22deg));
         @include transition(all 500ms ease-in-out 1.2s, border-width 400ms ease-in-out 1.5s, margin 500ms ease-in-out .5s);
         &:before {
             right: -40px;
             top: 30px;
             border-width: 0 20px 30px 20px;
-            border-color: rgba(#007bff,0) transparent rgba(#007bff,1) transparent;        
+            border-color: rgba($animation-border-color,0) transparent rgba($animation-border-color,1) transparent;        
             @include transform(rotate(-2deg));
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out 1.2s, border-width 400ms ease-in-out .5s, top 300ms ease-in-out 1s);
         }
@@ -60,27 +60,27 @@
             right: 0px;
             top: 30px;
             border-width: 0 20px 30px 20px;
-            border-color: transparent rgba(#007bff,0) rgba(#007bff,1) transparent;        
+            border-color: transparent rgba($animation-border-color,0) rgba($animation-border-color,1) transparent;        
             @include transform(rotate(2deg));
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out .7s, border-width 400ms ease-in-out .9s, top 300ms ease-in-out 1.4s, right 400ms ease-in-out 1.7s);
         }
         &.triangled {
             border-width: 10px 28px 20px 0px;
-            border-color: transparent transparent rgba(#007bff,1) transparent;
+            border-color: transparent transparent rgba($animation-border-color,1) transparent;
             margin-top: 10px;
             @include transform(rotate(6deg));
            &:before {
                right: -30px;
                top: -8px;
                border-width: 30px 30px 30px 0px;
-               border-color: rgba(#007bff,1) transparent rgba(#007bff,1) transparent;        
+               border-color: rgba($animation-border-color,1) transparent rgba($animation-border-color,1) transparent;        
                @include transform(rotate(0deg));
             }
             &:after {
                 right: -26px;
                 top: 19px;
                 border-width: 20px 26px 0px 0px;
-                border-color: transparent rgba(#007bff,1) rgba(#007bff,0)  transparent;        
+                border-color: transparent rgba($animation-border-color,1) rgba($animation-border-color,0)  transparent;        
                 @include transform(rotate(180deg));
             }
         }
@@ -89,13 +89,13 @@
         margin-top: 10px;
         margin-left: 44px;
         border-width: 10px 20px 20px 10px;
-        border-color: rgba(#007bff,0) transparent rgba(#007bff,1) transparent;
+        border-color: rgba($animation-border-color,0) transparent rgba($animation-border-color,1) transparent;
         @include transition(all 500ms ease-in-out 1.2s, margin 300ms ease-in-out .6s, border-width 400ms ease-in-out 1.5s, border-color 600ms ease-in-out 1s);
         &:before {
             left: -10px;
             top: 10px;
             border-width: 20px 2px 30px 20px;
-            border-color: rgba(#007bff,0) transparent rgba(#007bff,1) transparent;        
+            border-color: rgba($animation-border-color,0) transparent rgba($animation-border-color,1) transparent;        
             @include transform(rotate(-2deg));
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out 1.2s, border-width 400ms ease-in-out .5s, left 600ms ease-in-out .3s, top 300ms ease-in-out 1s);
         }
@@ -103,13 +103,13 @@
             left: 0;
             top: 15px;
             border-width: 10px 20px 30px 20px;
-            border-color: rgba(#007bff,0) rgba(#007bff,1) transparent transparent;        
+            border-color: rgba($animation-border-color,0) rgba($animation-border-color,1) transparent transparent;        
             @include transform(rotate(2deg));
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out .7s, border-width 400ms ease-in-out .9s, left 600ms ease-in-out .3s, top 300ms ease-in-out 1s);
         }
         &.triangled {
             border-width: 10px 45px 20px 0px;
-            border-color: rgba(#007bff,1) transparent rgba(#007bff,0) transparent;
+            border-color: rgba($animation-border-color,1) transparent rgba($animation-border-color,0) transparent;
             margin-top: 10px;
             margin-left: 30px;
             @include transform(rotate(-12deg));
@@ -117,14 +117,14 @@
                 left: -5px;
                 top: 9px;
                 border-width: 12px 6px 0 40px;
-                border-color: rgba(#007bff,1) transparent rgba(#007bff,0) transparent;        
+                border-color: rgba($animation-border-color,1) transparent rgba($animation-border-color,0) transparent;        
                 @include transform(rotate(235deg));
             }
             &:after {
                 left: -24px;
                 top: 35px;
                 border-width: 12px 0px 0 50px;
-                border-color: rgba(#007bff,1) rgba(#007bff,0) transparent transparent;        
+                border-color: rgba($animation-border-color,1) rgba($animation-border-color,0) transparent transparent;        
                 @include transform(rotate(-22deg));
             }
         }
@@ -133,26 +133,26 @@
         margin-left: 40px;
         margin-top: 12px;
         border-width: 15px 26px 2px 15px;
-        border-color: rgba(#007bff,0) rgba(#007bff,1) transparent transparent;
+        border-color: rgba($animation-border-color,0) rgba($animation-border-color,1) transparent transparent;
         @include transition(all 500ms ease-in-out 1.2s, margin 300ms ease-in-out .6s, border-width 400ms ease-in-out 1.5s, border-color 600ms ease-in-out 1s);
         &:before {
             left: -20px;
             top: 5px;
             border-width: 16px 15px 24px 16px;
-            border-color: rgba(#007bff,1) transparent transparent transparent;        
+            border-color: rgba($animation-border-color,1) transparent transparent transparent;        
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out 1.2s, border-width 400ms ease-in-out .5s, left 600ms ease-in-out .3s, top 300ms ease-in-out 1s);
         }
         &:after {
             left: -2px;
             top: 13px;
             border-width: 10px 14px 22px 12px;
-            border-color: rgba(#007bff,0) rgba(#007bff,1) transparent transparent;        
+            border-color: rgba($animation-border-color,0) rgba($animation-border-color,1) transparent transparent;        
             @include transform(rotate(-18deg));
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out .7s, border-width 400ms ease-in-out .9s, left 600ms ease-in-out .3s, top 300ms ease-in-out 1s);
         }
         &.triangled {
             border-width: 50px 10px 0px 10px;
-            border-color: rgba(#007bff,1) rgba(#007bff,0) transparent transparent;
+            border-color: rgba($animation-border-color,1) rgba($animation-border-color,0) transparent transparent;
             margin-top: 26px;
             margin-left: 20px;
             @include transform(rotate(-182deg));
@@ -160,14 +160,14 @@
                 left: -10px;
                 top: 0px;
                 border-width: 12px 6px 0 30px;
-                border-color: rgba(#007bff,1) transparent transparent transparent;        
+                border-color: rgba($animation-border-color,1) transparent transparent transparent;        
                 @include transform(rotate(40deg));
             }
             &:after {
                 left: -26px;
                 top: -3px;
                 border-width: 12px 0px 0 30px;
-                border-color: rgba(#007bff,1) rgba(#007bff,0) transparent transparent;        
+                border-color: rgba($animation-border-color,1) rgba($animation-border-color,0) transparent transparent;        
                 @include transform(rotate(118deg));
             }
         }
@@ -176,14 +176,14 @@
         border-width: 10px 7px 12px 8px;
         margin-top: 10px;
         margin-left: 20px;
-        border-color: transparent transparent rgba(#007bff,1) transparent;
+        border-color: transparent transparent rgba($animation-border-color,1) transparent;
         @include transform(rotate(-22deg));
         @include transition(all 500ms ease-in-out 1.2s, border-width 400ms ease-in-out 1.5s, margin 500ms ease-in-out .5s);
         &:before {
             left: -20px;
             top: -20px;
             border-width: 6px 2px 14px 12px;
-            border-color: rgba(#007bff,0) transparent rgba(#007bff,1) transparent;        
+            border-color: rgba($animation-border-color,0) transparent rgba($animation-border-color,1) transparent;        
             @include transform(rotate(-2deg));
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out 1.2s, border-width 400ms ease-in-out .5s, top 300ms ease-in-out 1s);
         }
@@ -191,13 +191,13 @@
             right: 10px;
             top: 10px;
             border-width: 0 12px 15px 10px;
-            border-color: transparent rgba(#007bff,0) transparent rgba(#007bff,1);        
+            border-color: transparent rgba($animation-border-color,0) transparent rgba($animation-border-color,1);        
             @include transform(rotate(-120deg));
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out .7s, border-width 400ms ease-in-out .9s, top 300ms ease-in-out 1.4s, right 400ms ease-in-out 1.7s);
         }
         &.triangled {
             border-width: 10px 28px 20px 0px;
-            border-color: transparent transparent rgba(#007bff,1) transparent;
+            border-color: transparent transparent rgba($animation-border-color,1) transparent;
             margin-top: 10px;
             margin-left: 30px;
             @include transform(rotate(6deg));
@@ -205,14 +205,14 @@
                left: 0px;
                top: -8px;
                border-width: 30px 30px 30px 0px;
-               border-color: rgba(#007bff,1) transparent rgba(#007bff,1) transparent;        
+               border-color: rgba($animation-border-color,1) transparent rgba($animation-border-color,1) transparent;        
                @include transform(rotate(0deg));
             }
             &:after {
                 right: -26px;
                 top: 19px;
                 border-width: 20px 26px 0px 0px;
-                border-color: transparent rgba(#007bff,1) transparent rgba(#007bff,0);        
+                border-color: transparent rgba($animation-border-color,1) transparent rgba($animation-border-color,0);        
                 @include transform(rotate(180deg));
             }
         }
@@ -221,26 +221,26 @@
         margin-left: 20px;
         margin-top: 12px;
         border-width: 6px 4px 2px 6px;
-        border-color: transparent rgba(#007bff,1) rgba(#007bff,0) transparent;
+        border-color: transparent rgba($animation-border-color,1) rgba($animation-border-color,0) transparent;
         @include transition(all 500ms ease-in-out 1.2s, margin 300ms ease-in-out .6s, border-width 400ms ease-in-out 1.5s, border-color 600ms ease-in-out 1s);
         &:before {
             left: -20px;
             top: 0px;
             border-width: 5px 6px 4px 4px;
-            border-color: rgba(#007bff,1) transparent transparent transparent;        
+            border-color: rgba($animation-border-color,1) transparent transparent transparent;        
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out 1.2s, border-width 400ms ease-in-out .5s, left 600ms ease-in-out .3s, top 300ms ease-in-out 1s);
         }
         &:after {
             left: 15px;
             top: -17px;
             border-width: 5px 4px 6px 2px;
-            border-color: transparent rgba(#007bff,1) tr rgba(#007bff,0) transparent;        
+            border-color: transparent rgba($animation-border-color,1) tr rgba($animation-border-color,0) transparent;        
             @include transform(rotate(-108deg));
             @include transition(all 500ms ease-in-out 1.2s, border-color 400ms ease-in-out .7s, border-width 400ms ease-in-out .9s, left 600ms ease-in-out .3s, top 300ms ease-in-out 1s);
         }
         &.triangled {
             border-width: 0px 0px 70px 8px;
-            border-color: transparent rgba(#007bff,0) rgba(#007bff,1) transparent;
+            border-color: transparent rgba($animation-border-color,0) rgba($animation-border-color,1) transparent;
             margin-top: 6px;
             margin-left: 20px;
             @include transform(rotate(0deg));
@@ -248,14 +248,14 @@
                 left: -15px;
                 top: 50px;
                 border-width: 12px 12px 0 40px;
-                border-color: rgba(#007bff,1) transparent transparent transparent;        
+                border-color: rgba($animation-border-color,1) transparent transparent transparent;        
                 @include transform(rotate(50deg));
             }
             &:after {
                 left: -10px;
                 top: 13px;
                 border-width: 0 12px 10px 38px;
-                border-color: transparent rgba(#007bff,0) rgba(#007bff,1) transparent;        
+                border-color: transparent rgba($animation-border-color,0) rgba($animation-border-color,1) transparent;        
                 @include transform(rotate(-40deg));
             }
         }

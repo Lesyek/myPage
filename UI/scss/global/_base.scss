@@ -18,10 +18,14 @@ body {
 
 // header
 .header-component {
-    height: 30%;
+    height: 80%;
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
+    @include transition(height .5s ease-in-out);
     @include media($mobile) {
+        height: 30%;
+    }
+    &.end {
         height: 30%;
     }
     #letters {
@@ -29,6 +33,9 @@ body {
             @include transform(scale(.7));
             left: 50%;
             margin-left: -200px;
+        }
+        @include media($tablet) {
+            @include transform(scale(1.3));
         }
     }
 }
