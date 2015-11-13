@@ -1,5 +1,5 @@
 // english text
-var dataType = '["I\'m a web developer concentrate on frontend of webpages.", "I create fancy animations & transition effects with user friendly experiance."]';
+var dataType = '["I\'m a frontend web developer.", "I like create fancy animations & transitions.", "If you want to know me better click links below." ]';
 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
